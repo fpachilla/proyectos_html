@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneos CDC</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <div class="progress">
+        <div class="progress-bar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" 
+        aria-valuemax="100" hidden="true">0%</div>
+    </div>
+    <div>
+        <p>
+            <h4 class="texto-introductorio">
+                ¡Bienvenido! A continuación podrás crear tu torneo con una gran variedad de opciones y variables. En principio, comenzaremos por los atributos principales del torneo
+            </h4>
+        </p>
+    </div>
+    <section>
+        <form method="POST" action="nuevotorneo2.html">
+            <fieldset>
+            <legend>Datos iniciales</legend>
+            <label for="nombretorneo">Nombre del torneo:</label><br/>
+            <input type="text" id="nombretorneo" name="nombretorneo" 
+             placeholder="Ingresá el nombre de tu torneo" required="true"><br/><br/>
+
+            <label for="cant_equipos">Cantidad de equipos:</label><br/>
+            <input type="number" id="cant_equipos" name="cant_equipos" 
+             placeholder="Desde 3 a 128" required="true"><br/><br/>
+
+            <label for="cant_jug">Cantidad de jugadores:</label><br/>
+            <input type="number" id="cant_jug" name="cant_jug" 
+             placeholder="Ingresá la cantidad de jugadores" required="true" maxlength="5"><br/><br/>
+
+            <label for="modalidad">Modalidad del torneo:</label><br/>
+            <select name="modalidad" id="modalidad">
+                <option value="titulo">-</option>
+                <option value="fdg">Fase de grupos</option>
+                <option value="eliminacion">Eliminación directa</option>
+                <option value="liga">Liga</option>
+            </select><br/><br/><br/>
+            <!-- <input type="submit" value="Siguiente"> -->
+            <button><a href="nuevotorneo2.html" class="boton_mov">Siguiente</a></button>
+            </fieldset>   
+        </form>
+    </section>
+</body>
+</html>
